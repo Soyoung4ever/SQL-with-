@@ -81,4 +81,4 @@ VALUES
 */
 --Answer 1-1
 select first_name, last_name, email
-from *
+from *;
