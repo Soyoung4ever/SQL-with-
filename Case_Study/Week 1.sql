@@ -98,4 +98,21 @@ SELECT *
 FROM Orders
 WHERE total_amount >= 100;
 
+--Answer 3-1
+SELECT product_name, price
+FROM Products;
 
+--Answer 3-2
+SELECT *
+FROM Products
+WHERE price >= 50;
+
+--Answer 4-1
+SELECT product_name, price
+FROM Products
+WHERE category = 'Electronics';
+
+--Answer 4-2
+SELECT order_id, order_date, total_amount
+FROM Orders
+WHERE order_date >= '2024-01-01';
