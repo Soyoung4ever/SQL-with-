@@ -1,5 +1,5 @@
 # SQL-with-Longji
-**
+--
 ### Business Case Study: Online Retail Store Data Analysis
 
 **Scenario:**
@@ -26,6 +26,7 @@ You are a data analyst working for an online retail store. The company has data 
     - product_id (Product ID)
     - quantity (Quantity)
     - unit_price (Unit Price)
+--
 
 **Questions:**
 
