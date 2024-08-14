@@ -29,9 +29,6 @@ You are a data analyst working for an online retail store. The company has data 
 
 **Questions:**
 
-- Create tables with the above table schemas
-
-**
 -- Customers table
 CREATE TABLE Customers (
     customer_id INT PRIMARY KEY,
