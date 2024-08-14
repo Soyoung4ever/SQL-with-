@@ -99,6 +99,8 @@ VALUES
 
 1. **Basic Data Exploration**
     - Display the first names, last names, and emails of all customers.
+      select    first_name, last_name, email
+      from Customers;
     - Display the names and join dates of customers who joined in 2024.
 2. **Sales Data Analysis**
     - Display the order ID, order date, and total amount for all orders.
