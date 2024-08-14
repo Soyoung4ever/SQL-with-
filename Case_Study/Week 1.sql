@@ -79,6 +79,23 @@ VALUES
     - Display the names and prices of products in the "Electronics" category.
     - Display the order ID, order date, and total amount for orders placed after "2024-01-01".
 */
+
 --Answer 1-1
 select first_name, last_name, email
-from *;
+from Customers;
+
+--Answer 1-2
+SELECT first_name, last_name, join_date
+FROM Customers
+WHERE join_date like '%2024%';
+
+--Answer 2-1
+SELECT order_id, order_date, total_amount
+from Orders;
+
+--Answer 2-2
+SELECT *
+FROM Orders
+WHERE total_amount >= 100;
+
+
