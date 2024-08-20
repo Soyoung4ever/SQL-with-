@@ -58,3 +58,66 @@ FROM Viewership v
 JOIN Users u ON v.user_id = u.user_id
 GROUP BY u.name;
 
+*/
+### Advanced Tasks:
+
+1. **Top Rated Movies by Viewership:**
+    - Create a query that lists the top 10 movies by viewership duration in the last year, along with their average ratings and the total number of unique viewers. Order the results by viewership duration in descending order.
+2. **User Retention Analysis:**
+    - Determine the average number of movies viewed per month by users in each subscription type. Identify any significant differences in engagement across the different subscription types over the last year.
+3. **Content Optimization:**
+    - For each genre, identify the movie with the highest average rating and the longest viewership duration. Combine this data to recommend which genres the streaming service should focus on acquiring more content for.
+4. **Correlating Ratings and Viewership:**
+    - Analyze if there is a correlation between user ratings and viewership duration. Provide a summary table that shows the average viewership duration for movies grouped by their rating (e.g., 0-2, 2-4, 4-6, 6-8, 8-10).
+5. **User Clustering by Viewing Habits:**
+    - Identify clusters of users based on their most-viewed genres and average viewership duration. Provide a summary that includes the number of users in each cluster and the average number of movies watched.
+6. **Subscription Upgrade Impact:**
+    - Analyze the impact of upgrading “Basic” subscription users to “Standard.” Compare the average viewership duration and the number of movies viewed before and after the upgrade for these users.
+/*
+--Answer 1
+SELECT m.title, SUM(v.duration) AS total_viewership_duration, AVG(m.rating) AS average_rating, COUNT(DISTINCT v.user_id) AS unique_viewers
+FROM Movies m
+JOIN Viewership v ON m.movie_id = v.movie_id
+GROUP BY m.title
+ORDER BY total_viewership_duration DESC
+LIMIT 10;
+
+--Answer 2
+흑 너무 어려워용ㅠ
+SELECT avg(m.movie_id), u.subscription_type
+FROM Viewership v
+Join Movies m on m.movie_id = v.movie_id
+JOIN Users u on u.user_id=v.user_id
+Group by m.movie_id;
+
+--Answer 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
